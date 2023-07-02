@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat-app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,300;0,500;1,700&family=Montserrat:ital,wght@1,300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
     <script defer src="app.js"></script>
 </head>
 <body>
-
-    <ul>
-        
-    </ul>
-
-    <input placeholder="message">
-    <button>Send</button>
-    
+    <div class="title-container">
+        <h1 class="title">Anonymous chat</h1>
+    </div>
+    <div class="chat-container">
+        <div class="message-container">
+            <p class="headline">Unveil your thoughts in the veil of anonymity. Chat freely and explore new perspectives.</p>
+          <ul class="message-list">
+            <!-- Messages will be appear here -->
+          </ul>
+        </div>
+        <div class="message-input-container">
+          <input type="text" class="message-input" placeholder="Enter message"/>
+          <button class="message-button">Send</button>
+        </div>
+    </div>
 </body>
 </html>

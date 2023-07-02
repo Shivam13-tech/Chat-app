@@ -11,9 +11,12 @@ socket.on('message', text => {
 
 document.querySelector('button').onclick = () => {
 
-    const text = document.querySelector('input').value;
-    socket.emit('message', text)
-    
+    const input = document.querySelector('input');
+    const text = input.value;
+    socket.emit('message', text);
+  
+    // Clear the input field
+    input.value = '';
 }
 
 // Regular Websockets
